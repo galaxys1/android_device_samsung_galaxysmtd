@@ -18,7 +18,6 @@ TARGET_LOW_RAM_DEVICE := true
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-
 # bootanimation
 TARGET_BOOTANIMATION_SIZE := 360x240
 
