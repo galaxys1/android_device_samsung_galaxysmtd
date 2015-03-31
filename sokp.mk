@@ -18,14 +18,14 @@ TARGET_LOW_RAM_DEVICE := true
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit sokp GSM telephony parts
+$(call inherit-product, vendor/sokp/config/gsm.mk)
 
 # bootanimation
 TARGET_BOOTANIMATION_SIZE := 360x240
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/sokp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/galaxysmtd/device.mk)
@@ -37,7 +37,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # Device identifier
 PRODUCT_RELEASE_NAME := GalaxyS
 PRODUCT_DEVICE := galaxysmtd
-PRODUCT_NAME := omni_galaxysmtd
+PRODUCT_NAME := sokp_galaxysmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9000
 
